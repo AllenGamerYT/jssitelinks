@@ -1,2 +1,0 @@
-# jssitelinks
-Created with CodeSandbox

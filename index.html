@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Testing</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <script src="src/index.js"></script>
+    <div id="greet"></div>
+
+    <script src="src/index.js"></script>
+
+    <div id="discord"></div>
+
+    <script src="src/index.js"></script>
+
+    <div id="twitch"></div>
+
+    <script src="src/index.js"></script>
+
+    <div id="mixer"></div>
+
+    <script src="src/index.js"></script>
+    <br />
+    <ol>
+      <script src="extras/buttons.js"></script>
+      <l>
+        <button type="button" onclick="dShowFunction()">
+          Discord Status
+        </button>
+        <br />
+        <p id="dshow">Reveal Discord Status</p>
+
+        <script>
+          function dShowFunction() {
+            document.getElementById("dshow").innerHTML = `
+  <iframe src="https://discordapp.com/widget?id=480709879137566730&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+  <br />
+  <iframe src="https://titanembeds.com/embed/480709879137566730?defaultchannel=480714136175640586&lang=en_US&lockscrollbar=false&theme=DiscordDark&username=Titan%20Guest&userscalable=false" height="600" width="800" frameborder="0"></iframe>
+  `;
+          }
+        </script>
+      </l>
+      <br />
+      <l>
+        <button type="button" onclick="showTwitchFunction()">
+          Twitch Channel
+        </button>
+        <br />
+        <p id="tshow">Reveal Twitch Channel</p>
+        <script>
+          function showTwitchFunction() {
+            document.getElementById("tshow").innerHTML = `
+  <iframe src="https://player.twitch.tv/?channel=johnnyboy2014" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/johnnyboy2014?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;">Watch live video from johnnyboy2014 on www.twitch.tv</a>
+  <br>
+  <iframe src="https://www.twitch.tv/embed/johnnyboy2014/chat" frameborder="0" scrolling="no" height="500" width="350"></iframe>
+  `;
+          }
+        </script>
+      </l>
+      <br />
+      <l>
+        <button type="button" onclick="showMixerFunction()">
+          Mixer Status
+        </button>
+        <br />
+        <p id="mshow">Reveal Mixer Channel</p>
+        <script>
+          function showMixerFunction() {
+            document.getElementById("mshow").innerHTML = `
+  <iframe allowfullscreen="true" src="https://mixer.com/embed/player/AllenGamerYT?vod=106412849" width="620" height="349"> </iframe>
+  <br />
+  <iframe allowfullscreen="true" src="https://mixer.com/embed/chat/AllenGamerYT" width="378" height="620"> </iframe>
+  `;
+          }
+        </script>
+      </l>
+    </ol>
+  </body>
+</html>
